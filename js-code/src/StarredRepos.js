@@ -1,10 +1,10 @@
-import React from 'react';
-import { withMobile } from './utils';
+import React from "react";
+import { withMobile } from "./utils";
 
 const StarredRepos = ({ starredRepos, isMobile }) => (
   <div>
     <h2>Starred Repos</h2>
-    <ul style={{ color: isMobile ? 'red' : 'blue' }}>
+    <ul style={{ color: isMobile ? "red" : "blue" }}>
       {starredRepos.map(repo => (
         <li>{repo.name}</li>
       ))}
